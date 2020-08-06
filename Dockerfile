@@ -11,5 +11,5 @@ RUN pip install -r requirements.txt
 # Bundle app source
 COPY . /app
 
-EXPOSE 5000
+EXPOSE 8080
 CMD [ "python", "main.py" ]
