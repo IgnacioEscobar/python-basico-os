@@ -6,7 +6,7 @@ WORKDIR /app
 # Install app dependencies
 COPY ./requirements.txt ./
 
-RUN apt-get update; apt-get install --reinstall -y curl vim awk
+RUN apt-get update; apt-get install --reinstall -y curl vim
 RUN pip install -r requirements.txt
 
 # Bundle app source
